@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+}
+body:hover {
+  animation-name: background;
+  animation-duration: 4s;
+}
+@keyframes background {
+  0% {
+    background-color: rgba(163, 163, 167, 0.4);
+  }
+  25% {
+    background-color: #c8b3bf;
+  }
+  50% {
+    background-color: #908f8f;
+  }
+  75% {
+    background-color: #817e7e;
+  }
+  100% {
+    background-color: #b5e1ef;
+  }
+}
+
+main {
+  min-height: 90vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(167, 167, 162, 0.5),
+    rgb(86, 163, 250, 0.5)
+  );
+  padding: 25px;
+}
+
+.search-box {
+  width: 80%;
+  margin: 0 0 100px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  appearance: none;
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  background-color: rgba(224, 215, 215, 0.8);
+  font-size: 18px;
+  color: black;
+}
+.location-box .location {
+  color: white;
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 4px 4px rgba(8, 7, 7, 0.5);
+}
+
+.location-box .date {
+  color: rgb(232, 208, 208);
+  font-size: 2rem;
+  text-align: center;
+
+  font-weight: 200;
+  text-shadow: 2px 2px rgba(8, 7, 7, 0.4);
+  font-style: italic;
+}
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temperature {
+  font-weight: 600;
+  color: white;
+  font-size: 90px;
+  padding: 30px 30px;
+  margin: 20px auto;
+  text-shadow: 3px 6px rgba(76, 72, 72, 0.5);
+  background-color: rgb(255, 255, 255, 0.3);
+  border-radius: 20px;
+  box-shadow: 2px 4px 6px rgba(76, 72, 72, 0.5);
+}
+.weather-box .weather {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  text-shadow: 4px 6px rgba(76, 72, 72, 0.5);
+}
+
+.app {
+  background-size: cover;
+  background-image: url(https://cdn.disneyanimation.com/uploads/technology/cloud-readme.jpg);
+}
+.app.warm {
+  background-image: url(https://us.123rf.com/450wm/kraft2727/kraft27271804/kraft2727180400029/kraft2727180400029.jpg?ver=6);
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  padding: 100px;
+  text-shadow: 4px 5px 6px rgba(0, 0, 0, 0.6);
+}
+.min-max {
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 50px;
+  color: rgb(84, 84, 84);
+}
